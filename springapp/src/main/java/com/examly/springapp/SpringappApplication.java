@@ -1,24 +1,13 @@
-<dependencies>
-    <!-- Spring Framework -->
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
-        <version>5.3.9</version>
-    </dependency>
+package com.examly.springapp;
 
-    <!-- TestNG -->
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.4.0</version>
-        <scope>test</scope>
-    </dependency>
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-    <!-- Selenium -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>3.141.59</version>
-    </dependency>
-</dependencies>
+@SpringBootApplication
+public class SpringappApplication {
 
+	public static void main(String[] args) {
+		SpringApplication.run(SpringappApplication.class, args);
+	}
+
+}
